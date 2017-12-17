@@ -1,7 +1,7 @@
 # FPPKSJ
 
 ### DAFTAR ISI
-- [Dasar Teori](dasar-teori.md)
+- [Dasar Teori](dasar teori.md)
 - [Konfigurasi Mutillidae](konfigurasi-mutillidae.md)
 - [Uji Coba Mutillidae](uji-coba-mutillidae.md)
 - [Instalasi Cuckoo](instalasi-cuckoo.md)
