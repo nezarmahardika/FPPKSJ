@@ -2,14 +2,11 @@
 
 ### DAFTAR ISI
 - [Dasar Teori](dasar_teori.md)
-- [Konfigurasi Mutillidae](konfigurasi-mutillidae.md)
-- [Uji Coba Mutillidae](uji-coba-mutillidae.md)
-- [Instalasi Cuckoo](instalasi-cuckoo.md)
-- [Konfigurasi Cuckoo](konfigurasi-cuckoo.md)
-- [Uji Coba Cuckoo](uji-coba-cuckoo.md)
-- [Instalasi Snort](instalasi-snort.md)
-- [Konfigurasi Snort](konfigurasi-snort.md)
-- [Uji Coba Snort](uji-coba-snort.md)
-- [Kesimpulan dan Saran](kesimpulan-dan-saran.md)
-
-### PENDAHULUAN
+- [Konfigurasi Mutillidae](konfigurasi_mutillidae.md)
+- [Uji Coba Mutillidae](uji_coba_mutillidae.md)
+- [Instalasi Cuckoo](instalasi_cuckoo.md)
+- [Konfigurasi Cuckoo](konfigurasi_cuckoo.md)
+- [Uji Coba Cuckoo](uji_coba_cuckoo.md)
+- [Instalasi Snort](instalasi_snort.md)
+- [Konfigurasi Snort](konfigurasi_snort.md)
+- [Uji Coba Snort](uji_coba_snort.md)
