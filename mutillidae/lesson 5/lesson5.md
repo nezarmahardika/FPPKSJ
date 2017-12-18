@@ -1,6 +1,5 @@
 Lesson 5
 --------
-### SQL Injection: Single Quote Test On Username Field
 - **Step 1**    : Buka Login/Register
 - **Step 2**    : Ketik `'` di kolom **Name**
 ![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%205/1.JPG)
