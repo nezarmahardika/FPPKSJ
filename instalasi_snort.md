@@ -1,4 +1,4 @@
-Instalasi Snort di Ubuntu
+### Instalasi Snort di Ubuntu
 --------------------
 
 Instalasi Snort di ubuntu cukup sederhana tetapi membutuhkan langkah-langkah yang sedikit panjang. langkah-langkah tersebut akan dijabarkan dibawah ini :
@@ -61,8 +61,65 @@ Instalasi Snort di ubuntu cukup sederhana tetapi membutuhkan langkah-langkah yan
 - **Langkah 8**    : untuk menjalankan snort tanpa harus masuk sebagai root, gunakan command sebagai berikut
     ```
     sudo groupadd snort
-    sudo useradd snort -r -s /sbin/nologin -c SNORT_IDS -g snort
     ```
     ```
-    sudo ln -s /usr/local/bin/snort /usr/sbin/snort
+    sudo useradd snort -r -s /sbin/nologin -c SNORT_IDS -g snortt
+    ```
+    
+- **Langkah 9**    : buat folder untuk menampung konfigurasi dari Snort dengan mengikuti command dibawah
+    ```
+    sudo mkdir -p /etc/snort/rules
+    ```
+    ```
+    sudo mkdir /var/log/snort
+    ```
+    ```
+    sudo mkdir /usr/local/lib/snort_dynamicrules
+    ```
+
+- **Langkah 10**    : ubah permission dari folder-folder tersebut
+    ```
+    sudo chmod -R 5775 /etc/snort
+    ```
+    ```
+    sudo chmod -R 5775 /var/log/snort
+    ```
+    ```
+    sudo chmod -R 5775 /usr/local/lib/snort_dynamicrules
+    ```
+    ```
+    sudo chown -R snort:snort /etc/snort
+    ```
+    ```
+    sudo chown -R snort:snort /var/log/snort
+    ```
+    ```
+    sudo chown -R snort:snort /usr/local/lib/snort_dynamicrules
+    ```
+    
+- **Langkah 11**    : buat file yang merupakan rules dari Snort
+    ```
+    sudo touch /etc/snort/rules/white_list.rules
+    ```
+    ```
+    sudo touch /etc/snort/rules/black_list.rules
+    ```
+    ```
+    sudo touch /etc/snort/rules/local.rules
+    ```
+    
+- **Langkah 12**    : salin file konfigurasi dari temporary folder
+    ```
+    sudo cp ~/snort_src/snort-2.9.9.0/etc/*.conf* /etc/snort
+    ```
+    ```
+    sudo cp ~/snort_src/snort-2.9.9.0/etc/*.map /etc/snort
+    ```
+    
+- **Langkah 13**    : salin file konfigurasi dari temporary folder
+    ```
+    sudo cp ~/snort_src/snort-2.9.9.0/etc/*.conf* /etc/snort
+    ```
+    ```
+    sudo cp ~/snort_src/snort-2.9.9.0/etc/*.map /etc/snort
     ```
