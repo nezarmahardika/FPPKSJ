@@ -1,4 +1,21 @@
 ## DASAR TEORI
+* **Cuckoo Sandbox** adalah 
+
+* **Malware** adalah 
+
+* **Ssdeep** adalah 
+
+* **Yara** adalah 
+
+* **Volatility** adalah 
+
+* **Distorm** adalah 
+
+* **Pycrypto** adalah 
+
+* **Mitmproxy** adalah 
+
+* **Ransomware Locky** adalah
 
 ## Keterangan
 disini kami menggunakan OS DEBIAN 9.1 sebagai OS untuk instalasi cuckoo dan telah login sebagai root dan menggunakan windows xp pada virtual box 5.2 sebagai target malware.
