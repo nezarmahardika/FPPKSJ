@@ -56,7 +56,7 @@
   ```
   $ cuckoo
   ```
-  ![assets](assets/pic/21.PNG)
+  ![assets](assets/pic/21.png)
 
 2. run cuckoo pada web melalui cli
   ```
