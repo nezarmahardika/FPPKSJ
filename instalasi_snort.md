@@ -123,3 +123,16 @@ Instalasi Snort di ubuntu cukup sederhana tetapi membutuhkan langkah-langkah yan
     ```
     sudo cp ~/snort_src/snort-2.9.9.0/etc/*.map /etc/snort
     ```
+
+
+### Instalasi Snort di Windows
+--------------------
+- **Langkah 1**    : masuk ke website dari Snort lalu pilih tab Windows
+    ```
+    https://www.snort.org/#get-started
+    ```
+     ![](/assets/kali-Snort/instal.png)
+- **Langkah 2**    : jalankan snort2.9.11.exe
+
+- **Langkah 3**    : lakukan instalasi secara manual dan seperti biasa. setelah itu kita akan mendapatkan folder Snort seperti ini
+     ![](/assets/Snort/windows.png)
