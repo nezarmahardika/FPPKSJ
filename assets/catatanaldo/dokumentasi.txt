@@ -1,0 +1,182 @@
+INSTALASI CUCKOO
+
+login debian as root
+
+1. install librari yang dibutuhkan
+
+apt install git mongodb libffi-dev build-essential python-django python python-dev python-pip python-pil python-sqlalchemy python-bson python-dpkt python-jinja2 python-magic python-pymongo python-gridfs python-libvirt python-bottle python-pefile python-chardet tcpdump -y
+pic no 1
+
+2. set tcpdump agar bisa diakses root
+
+setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+pic no 2
+
+3. install ssdeep + validasi
+wget http://sourceforge.net/projects/ssdeep/files/ssdeep-2.12/ssdeep-2.12.tar.gz
+tar xvzf ssdeep-2.12.tar.gz
+cd ssdeep-2.12
+./configure && make && make install
+git clone https://github.com/kbandla/pydeep
+cd pydeep
+python setup.py build
+python setup.py install 
+
+pic no 3
+
+4. install yara + validasi
+apt-get install autoconf libtool-bin
+wget https://github.com/VirusTotal/yara/archive/v3.7.0.tar.gz
+./bootstrap.sh
+./configure --with-crypto --enable-cuckoo --enable-magic
+make && make install
+
+pic no 4
+
+git clone --recursive https://github.com/VirusTotal/yara-python
+cd yara-python
+python setup.py build
+python setup.py install
+
+pic no 5
+
+4.5 install distorm
+download from web
+tar -xvzf distorm-3.3.4.tar.gz
+cd distorm-3.3.4
+python setup.py install
+pic no 55
+
+4.6 install pycrypto
+download from web
+tar -xvzf pycrypto
+cd pycrypto
+python setup.py build
+python setup.py install
+pic no 56
+
+4.7 install openpyxl
+pip install openpyxl
+
+4.8 install ujson
+pip install ujson
+
+4.9 install jupyter
+pip install jupyter
+
+5. installing prasyarat untuk volatility
+pip install openpyxl ujson pycrypto distorm3 pytz
+
+pic no 7
+
+6. install volatility + validasi
+git clone https://github.com/volatilityfoundation/volatility.git
+cd volatility
+python setup.py build
+python setup.py install
+python vol.py -h
+
+pic no 6
+
+6.5 install mitmproxy
+pip install mitmproxy
+
+
+
+7. install cuckoo
+git clone git://github.com/cuckoosandbox/cuckoo.git
+
+pip install -U pip setuptools
+pip install -U cuckoo
+
+pic no 8
+
+8. add user cuckoo dan daftarkan user cuckoo untuk run aplikasi cuckoo
+useradd cuckoo
+chown -R cuckoo:cuckoo /root/.cuckoo/
+
+install virtual box dan windows xp
+1. apt install virtualbox-5.2
+
+pic no 9
+
+2. add user cuckoo
+usermod -a -G vboxusers cuckoo
+
+3. membuat virtual windows xp
+pic no 11
+
+4. set host adapter only
+pic no 13 12
+
+5. set ip di windows xp
+pic no 14
+
+6. set shared folder di windows xp
+pic no 15
+
+6.5. set insert guest addition CD
+pic no 16
+
+7. matikan windows firewall dan windows update
+pic no 17 18
+
+8. install python 2.7 di windowsxp
+pic no 10
+
+9. starting agent.py di windowsxp, agent.py terbaru tidak mengeluarkan apa apa
+pic no 19
+
+10. mengambil snapshoot
+vboxmanage snapshot "windowsxp" take "snapshot1" --pause
+vboxmanage controlvm "windowsxp" poweroff
+vboxmanage snapshot "windowsxp" restorecurrent
+pic no 20
+
+config cuckoo
+1. nano /root/.cuckoo/conf/cuckoo.conf
+machinery = virtualbox
+ip = 192.168.56.1
+port = 2042
+memory dump = yes
+
+2. nano /root/.cuckoo/conf/auxiliary.conf
+[sniffer]
+# Enable or disable the use of an external sniffer (tcpdump) [yes/no].
+enabled = yes
+
+# Specify the path to your local installation of tcpdump. Make sure this
+# path is correct.
+# You can check this using the command: whereis tcpdump
+tcpdump = /usr/sbin/tcpdump
+
+mitm = yes
+
+3. nano /root/.cuckoo/conf/virtualbox.conf
+interface = vboxnet0
+machines = windowsxp
+[windowsxp]
+label = windowsxp
+platform = windows
+ip = 192.168.56.10
+snapshot = snapshot1
+
+4. nano /root/.cuckoo/conf/reporting.conf
+[mongodb]
+enabled = yes
+
+html = yes
+
+4.5 nano processing,.conf
+memory = yes
+
+5. test run cuckoo di terminal
+cuckoo
+pic no 21
+
+skenario
+1. upload file ransomeware locky ke web cuckoo
+
+
+
+
