@@ -7,4 +7,4 @@ Lesson 7
 - Lalu akan muncul hasilnya seperti pada gambar dibawah
 ![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%207/2.JPG)
 - **Step 4**    : Lalu buka aplikasi burpsuite, pada tab proxy, lalu HTTP history, buka pada host yang terdapat method get yang baru saja kita lakukan pada mutillidae
-![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%206/3.JPG)
+![](https://github.com/nezarmahardika/FPPKSJ/blob/master/mutillidae/lesson%207/3.JPG)
