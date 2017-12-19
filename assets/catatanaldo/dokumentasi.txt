@@ -5,6 +5,7 @@ login debian as root
 1. install librari yang dibutuhkan
 
 apt install git mongodb libffi-dev build-essential python-django python python-dev python-pip python-pil python-sqlalchemy python-bson python-dpkt python-jinja2 python-magic python-pymongo python-gridfs python-libvirt python-bottle python-pefile python-chardet tcpdump -y
+ apt-get install python3-pip python3-dev libssl-dev libtiff5-dev libjpeg62-turbo-dev zlib1g-dev libwebp-dev
 pic no 1
 
 2. set tcpdump agar bisa diakses root
