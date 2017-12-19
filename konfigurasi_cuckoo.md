@@ -64,3 +64,4 @@
   $ cuckoo web runserver
   ```
   lalu akses pada web dengan url 127.0.0.1:8000
+  ![assets](assets/pic/dashboard.png)
