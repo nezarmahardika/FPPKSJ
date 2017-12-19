@@ -127,7 +127,7 @@ Instalasi Snort di ubuntu cukup sederhana tetapi membutuhkan langkah-langkah yan
     ```
     snort -V
     ```
-    ![](/assets/Snort/hasilinstalubuntu.PNG)
+    ![](/assets/Snort/hasilinstalubuntu.png)
 
 
 ### Instalasi Snort di Windows
