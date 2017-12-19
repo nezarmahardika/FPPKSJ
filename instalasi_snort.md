@@ -131,7 +131,7 @@ Instalasi Snort di ubuntu cukup sederhana tetapi membutuhkan langkah-langkah yan
     ```
     https://www.snort.org/#get-started
     ```
-     ![](/assets/kali-Snort/instal.png)
+     ![](/assets/Snort/instal.PNG)
 - **Langkah 2**    : jalankan snort2.9.11.exe
 
 - **Langkah 3**    : lakukan instalasi secara manual dan seperti biasa. setelah itu kita akan mendapatkan folder Snort seperti ini
