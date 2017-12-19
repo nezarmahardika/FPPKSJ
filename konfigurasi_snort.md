@@ -10,5 +10,8 @@ Konfigurasi Snort di Ubuntu maupun windows pada dasarnya sama saja, hanya letak 
          ```
         - Windows : Terletak di dalam folder 'etc' di dalam folder instalasi Snort
         ![](/assets/Snort/snortwindows.PNG)
+- **Step 6**    : Jalankan Kali Linux
+        - Username    : root
+        - Password    : osboxes.org
        
 
