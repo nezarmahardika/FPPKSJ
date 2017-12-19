@@ -1,4 +1,4 @@
-#KONFIGURASI CUCKOO
+# KONFIGURASI CUCKOO
 
 1. cuckoo .conf
   ```
