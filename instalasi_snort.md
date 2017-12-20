@@ -41,7 +41,7 @@ Instalasi Snort di ubuntu cukup sederhana tetapi membutuhkan langkah-langkah yan
     ```
     cd snort-2.9.11
     ```
-    
+     
 - **Langkah 6**    : run skrip konfigurasi dengan 'sourcefire' , lalu kompilasi program dengan 'make' dan install
     ```
     ./configure --enable-sourcefire && make && sudo make install
